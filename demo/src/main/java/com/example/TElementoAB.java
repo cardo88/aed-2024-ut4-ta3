@@ -171,17 +171,33 @@ public class TElementoAB<T> implements IElementoAB<T> {
         return elHijo;
     }
 
-    public int obtenerTamaño() {
+    public int obtenerTamano() {
         int tamaño = 1;
 
         if (hijoDer != null) {
-            tamaño += hijoDer.obtenerTamaño();
+            tamaño += hijoDer.obtenerTamano();
         }
 
         if (hijoIzq != null) {
-            tamaño += hijoIzq.obtenerTamaño();
+            tamaño += hijoIzq.obtenerTamano();
         }
 
         return tamaño;
     }
+
+    public int obtenerAltura() {
+        int AlturaDer = 0;
+        int AlturaIzq = 0;
+
+        if (hijoDer != null) {
+            AlturaDer = hijoDer.obtenerAltura();
+        }
+
+        if (hijoIzq != null) {
+            AlturaIzq = hijoIzq.obtenerAltura();
+        }
+
+        return 1 + Math.max(AlturaDer, AlturaIzq);
+    }
+
 }

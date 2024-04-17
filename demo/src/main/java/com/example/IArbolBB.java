@@ -52,4 +52,17 @@ public interface IArbolBB<T> {
    */
   public T eliminar(Comparable unaEtiqueta);
 
+  /**
+   * Retorna la altura del árbol.
+   * 
+   * @return Altura del árbol.
+   */
+  public int obtenerAltura();
+
+  /**
+   * Retorna el tamaño del árbol.
+   * 
+   * @return Tamaño del árbol.
+   */
+  public int obtenerTamano();
 }

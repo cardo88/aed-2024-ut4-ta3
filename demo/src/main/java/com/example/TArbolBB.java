@@ -53,10 +53,19 @@ public class TArbolBB<T> implements IArbolBB {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'insertar'");
     }
-
-    public int obtenerTamaño() {
+    
+    @Override
+    public int obtenerTamano() {
         if (raiz != null) {
-            return raiz.obtenerTamaño();
+            return raiz.obtenerTamano();
+        }
+        return 0;
+    }
+
+    @Override
+    public int obtenerAltura() {
+        if (raiz != null) {
+            return raiz.obtenerAltura();
         }
         return 0;
     }

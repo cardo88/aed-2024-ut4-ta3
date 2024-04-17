@@ -13,13 +13,13 @@ public class TestTamañodelArbol {
         arbol.insertar(1, 1);
         arbol.insertar(33, 33);
 
-        assertEquals(5, arbol.obtenerTamaño());
+        assertEquals(5, arbol.obtenerTamano());
     }
 
     @Test
     void obtenerTamañoVacio() {
         TArbolBB<String> arbol = new TArbolBB<String>();
-        assertEquals(0, arbol.obtenerTamaño());
+        assertEquals(0, arbol.obtenerTamano());
     }
 
     @Test
@@ -34,7 +34,7 @@ public class TestTamañodelArbol {
         String inorden1 = arbol.inOrden();
         String preorden1 = arbol.preOrden();
 
-        arbol.obtenerTamaño();
+        arbol.obtenerTamano();
 
         String inorden2 = arbol.inOrden();
         String preorden2 = arbol.preOrden();
